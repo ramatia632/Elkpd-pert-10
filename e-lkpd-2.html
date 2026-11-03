@@ -246,6 +246,7 @@ async function buildPDF(c){
     u.replaceWith(box);
   });
   main.querySelectorAll('#kirim,#teacher,.checkrow,[data-label-for]').forEach(e => e.remove());
+  [hero, main].forEach(r => r.querySelectorAll('mjx-assistive-mml').forEach(e => e.remove()));
   host.append(hero, main); document.body.appendChild(host);
   await Promise.all([...host.querySelectorAll('img')].map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })));
   const doc = new J({unit:'mm', format:'a4'}); const M = 10, PW = 190, PB = 284; let y = M;
