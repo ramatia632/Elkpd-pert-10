@@ -1,0 +1,3 @@
+// Tempel URL aplikasi web Google Apps Script (berakhiran /exec) di antara tanda kutip di bawah ini.
+// Contoh: window.ELKPD_ENDPOINT = 'https://script.google.com/macros/s/AKfy.../exec';
+window.ELKPD_ENDPOINT = '';
